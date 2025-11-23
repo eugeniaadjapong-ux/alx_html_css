@@ -103,3 +103,38 @@ section:nth-of-type(2) div div h3 {
 section {
     margin-bottom: 80px;
 }
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b87fff; /* light purple background */
+    padding: 50px 20px;
+    color: #fff;
+    gap: 40px;
+    flex-wrap: wrap; /* makes it responsive */
+}
+
+section div:first-child img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* circular image */
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+section div:last-child blockquote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: normal; /* removes default italics */
+}
+
+section div:last-child h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section div:last-child p {
+    font-style: italic;
+    opacity: 0.8;
+}
